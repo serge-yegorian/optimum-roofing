@@ -1,0 +1,36 @@
+@use './dimensions.scss' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Varela', sans-serif;
+}
+
+*::selection {
+  background-color: #d6251b;
+  color: white;
+}
+
+main {
+  padding: 1rem;
+  @include tablet {
+    padding: 2rem;
+  }
+}
+
+body {
+  // background-color: #d6251b;
+  @include desktop {
+    background-color: #F0F7FF;
+    background-image: none;
+  }
+  background-image: linear-gradient(-150deg, #d6251b, hsla(280, 100%, 50%, 0.3));
+
+}
+
+html {
+  background-color: #111;
+  scroll-behavior: smooth;
+  scroll-padding: 2rem;
+}

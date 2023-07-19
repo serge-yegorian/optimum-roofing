@@ -1,0 +1,17 @@
+@mixin tablet {
+    @media (min-width: 432px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 725px) {
+        @content;
+    }
+}
+
+@font-face {
+    font-family: 'Varela';
+    src: url(./VarelaRound-Regular.ttf);
+}
+

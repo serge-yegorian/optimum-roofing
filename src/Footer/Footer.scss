@@ -1,0 +1,144 @@
+@use '../dimensions.scss' as *;
+
+.footer {
+    background-color: #111;
+    color: white;
+    padding: 1rem;
+    padding-bottom: 0;
+    max-width: 900px;
+    margin: 0 auto;
+   
+
+    &__background {
+        background-color: #111;
+    }
+
+    &__middle {
+        @include desktop {
+            display: block;
+        }
+    }
+
+    &__media {
+        display: flex;
+    }
+
+    &__media-a {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        padding: 0.3rem;
+    }
+
+    &__media-li {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+        color: #d6251b;
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+    }
+
+    &__col {
+        margin-bottom: 2rem;
+    }
+
+    &__paragraph {
+        color: #b1b1b1;
+        @include tablet {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        @include desktop {
+            max-width: 450px;
+            font-size: 1.2rem;
+        }
+
+    }
+
+    &__h {
+        margin-bottom: 0.5rem;
+        @include desktop{
+            font-size: 1.4rem;
+        }
+    }
+
+    &__li {
+        margin-bottom: 0.3rem;
+        @include tablet {
+            margin-bottom: 0.5rem;
+        }
+
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__a {
+        color: #d6251b;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    &__a:hover {
+        color: #ff251b;
+    }
+
+    &__main-link {
+        color: #d6251b;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+    }
+
+    &__subheading {
+        margin-bottom: 0.5rem;
+        @include tablet {
+            margin-top: 1rem;
+        }
+        @include desktop {
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+    }
+
+    &__top {
+        @include desktop {
+            display: flex;
+            gap: 1rem;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+    }
+
+    &__bottom {
+        padding: 0.2rem;
+        text-align: center;
+        background-color: #F0F7FF;
+        position: absolute;
+        width: 100vw;
+        left: 0;
+        color: #111;
+        z-index: 0;
+        box-shadow: 0 0 5px #F0F7FF;
+    }
+
+    &__developer-link {
+        text-decoration: none;
+        color: #d6251b;
+        padding: 0.5rem;
+        transition: 0.3s;
+        padding-left: 0;
+        padding-left: 0.2rem;
+        padding-right: 0.5rem;
+    }
+
+    &__developer-link:hover {
+        color: #ff251b;
+    }
+}
+

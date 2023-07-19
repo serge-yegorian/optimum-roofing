@@ -1,0 +1,77 @@
+@use '../dimensions.scss' as *;
+
+.header {
+    padding: 1rem;
+    padding-bottom: 2rem;
+    @include desktop {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    &__background {
+        background-color: #F0F7FF;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        @include desktop {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+        
+    }
+
+    &__heading {
+        font-size: 1.6rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        @include desktop {
+            margin-bottom: 0.5rem;
+            margin-top: 0.5rem;
+            text-align: left;
+        }
+    }
+
+    &__description {
+        margin-bottom: 1.5rem;
+        text-align: center;
+        line-height: 1.4rem;
+        @include desktop {
+            max-width: 600px;
+            margin: 0 auto 1rem;
+            text-align: left;
+        }
+    }
+
+    &__a {
+        color: #d6251b;
+        text-decoration: none;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+
+    &__a:hover {
+        color: #ff251b;
+    }
+
+    &__logo-link {
+        display: flex;
+    }
+
+    &__logo {
+        width: 100%;
+        
+    }
+
+    &__image-div {
+        @include tablet {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+    }
+
+}

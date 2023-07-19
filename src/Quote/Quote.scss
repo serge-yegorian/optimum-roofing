@@ -1,0 +1,40 @@
+@use '../dimensions.scss' as *;
+.quote {
+    margin-top: 2rem;
+    background-color: #F0F7FF;
+    box-shadow: 0 0 10px #F0F7FF;
+    padding: 1rem;
+    @include desktop {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    &__heading {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        width: 100%;
+        cursor: pointer;
+        font-size: 1rem;
+        border-radius: 4px;
+        color: white;
+        background-color: #d6251b;
+        transition: 0.3s;
+        font-weight: bold;
+        border: none;
+        text-decoration: none;
+    }
+
+    &__button:hover {
+        background-color: #ff251b;
+        color: white;
+        box-shadow: 0 0 5px #ff251b;
+    }
+}

@@ -3,15 +3,9 @@
 .footer {
     background-color: #111;
     color: white;
-    padding: 1rem;
     padding-bottom: 0;
     max-width: 900px;
     margin: 0 auto;
-   
-
-    &__background {
-        background-color: #111;
-    }
 
     &__middle {
         @include desktop {
@@ -107,6 +101,10 @@
     }
 
     &__top {
+        padding: 1rem;
+        @include tablet {
+            padding: 2rem;
+        }
         @include desktop {
             display: flex;
             gap: 1rem;
@@ -119,12 +117,8 @@
         padding: 0.2rem;
         text-align: center;
         background-color: #F0F7FF;
-        position: absolute;
-        width: 100vw;
-        left: 0;
         color: #111;
-        z-index: 0;
-        box-shadow: 0 0 5px #F0F7FF;
+        border: 1px solid #111;
     }
 
     &__developer-link {

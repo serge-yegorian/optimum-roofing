@@ -3,25 +3,17 @@
 .header {
     padding: 1rem;
     padding-bottom: 2rem;
+    background-color: #F0F7FF;
+    border: 1px solid #111;
+    @include tablet {
+        padding: 2rem;
+    }
     @include desktop {
         display: flex;
         align-items: center;
         gap: 2rem;
         max-width: 900px;
         margin: 0 auto;
-    }
-
-    &__background {
-        background-color: #F0F7FF;
-        border-bottom-left-radius: 1rem;
-        border-bottom-right-radius: 1rem;
-        @include desktop {
-            position: absolute;
-            top: 0;
-            right: 0;
-            left: 0;
-        }
-        
     }
 
     &__heading {
@@ -41,7 +33,7 @@
         line-height: 1.4rem;
         @include desktop {
             max-width: 600px;
-            margin: 0 auto 1rem;
+            margin: 0 auto;
             text-align: left;
         }
     }

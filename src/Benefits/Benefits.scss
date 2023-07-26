@@ -2,38 +2,46 @@
 .benefits {
     background-color: #F0F7FF;
     padding: 1rem;
-    margin-top: 2rem;
-    border-radius: 4px;
-    box-shadow: 0 0 10px #F0F7FF;
+    border: 1px solid #111;
+    @include tablet {
+        padding: 2rem;
+    }
     @include desktop {
         max-width: 900px;
-        margin: 2rem auto;
+        margin: 0 auto;
     }
 
     &__heading {
-        text-align: center;
         font-size: 1.8rem;
         font-weight: 900;
         margin-bottom: 1.5rem;
     }
 
-    &__icon {
-        width: 100%;
-        border-radius: 4px;
-    }
 
     &__description {
-        text-align: center;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        @include desktop {
+            margin-bottom: 1.5rem;
+        }
     }
 
     &__reason {
-        text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     &__container {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
+        flex: 1;
+        @include tablet {
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 2rem;
+            justify-content: space-between;
+        }
+        @include desktop {
+            display: block;
+        }
+        // width: 17rem;
     }
 
     &__container:last-of-type {
@@ -43,7 +51,21 @@
     &__list {
         @include desktop {
             display: flex;
-            gap: 2rem;
+            gap: 3rem;
+        }
+    }
+
+    &__icon {
+        max-width: 100%;
+        padding: 1rem;
+        background-color: #f0f0f0;
+        border: 1px solid #111;
+        @include tablet {
+            max-width: 10rem
+        }
+        @include desktop {
+            padding: 2rem;
+            max-width: none;
         }
     }
 }

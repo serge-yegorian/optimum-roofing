@@ -1,17 +1,19 @@
 @use '../dimensions.scss' as *;
 .quote {
-    margin-top: 2rem;
     background-color: #F0F7FF;
-    box-shadow: 0 0 10px #F0F7FF;
     padding: 1rem;
+    border: 1px solid #111;
+    @include tablet {
+        padding: 2rem;
+    }
     @include desktop {
+        padding: 2rem;
         max-width: 900px;
         margin: 0 auto;
     }
 
     &__heading {
         font-size: 1.8rem;
-        text-align: center;
         margin-bottom: 1.5rem;
     }
 
@@ -23,18 +25,19 @@
         width: 100%;
         cursor: pointer;
         font-size: 1rem;
-        border-radius: 4px;
         color: white;
-        background-color: #d6251b;
-        transition: 0.3s;
+        background-color: #4B0082;
+        transition: 0.2s;
         font-weight: bold;
         border: none;
         text-decoration: none;
+        @include tablet {
+            max-width: 16rem;
+        }
     }
 
     &__button:hover {
-        background-color: #ff251b;
+        background-color: #6E5494;
         color: white;
-        box-shadow: 0 0 5px #ff251b;
     }
 }

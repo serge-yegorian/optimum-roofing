@@ -8,7 +8,7 @@ function Form() {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm('service_ouzpt97', 'template_0njsdj7', formRef.current, 'JofyiBISK_50XH6UG')
-      .then((result) => {
+      .then((result) => { 
           console.log(result.text);
           window.alert( "Sent succesfully! We will contact you within 24 hours!")
       }, (error) => {
